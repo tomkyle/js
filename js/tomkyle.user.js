@@ -3,7 +3,7 @@ var tomkyle = tomkyle || {};
 
 tomkyle.User = (function(window, tomkyle, U) {
 
-    U.api_key = window.user_api_key || null;
+    U.api_key = U.api_key || null;
 
     tomkyle.$document.ready( function (event) {
         tomkyle.log("[domready] tomkyle.User");
@@ -12,4 +12,4 @@ tomkyle.User = (function(window, tomkyle, U) {
 
     return U;
 
-}(window, tomkyle, tomkyle.User || {}));
+}(window, window.tomkyle, window.tomkyle.User || {}));
