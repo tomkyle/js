@@ -1,0 +1,9 @@
+{
+  "name": "tomkyle/js",
+  "author": "Carsten Witt",
+
+  "dependencies": {
+      "jquery": ">=1.10"
+  },
+
+}
