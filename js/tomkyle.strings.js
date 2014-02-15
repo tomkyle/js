@@ -6,7 +6,8 @@
  * the bracket expression and it repeats. This is useful for automatically
  * fixing URLs.
  *
- * @see  http://javascript.crockford.com/remedial.html
+ * @author Douglas Crockford
+ * @see    http://javascript.crockford.com/remedial.html
  */
 if (!String.prototype.supplant) {
     String.prototype.supplant = function (o) {
@@ -25,7 +26,8 @@ if (!String.prototype.supplant) {
  * The trim() method removes whitespace characters
  * from the beginning and end of the string.
  *
- * @see  http://javascript.crockford.com/remedial.html
+ * @author Douglas Crockford
+ * @see    http://javascript.crockford.com/remedial.html
  */
 if (!String.prototype.trim) {
     String.prototype.trim = function () {
@@ -42,7 +44,8 @@ if (!String.prototype.trim) {
  * in quotes and all quote and backslash characters are
  * preceded with backslash.
  *
- * @see  http://javascript.crockford.com/remedial.html
+ * @author Douglas Crockford
+ * @see    http://javascript.crockford.com/remedial.html
  */
 if (!String.prototype.quote) {
     String.prototype.quote = function () {
