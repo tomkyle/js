@@ -84,3 +84,21 @@ if (!String.prototype.quote) {
         return o + '"';
     };
 }
+
+
+/**
+ * entityify
+ *
+ * Produces a string in which '<', '>', and '&' are replaced
+ * with their HTML entity equivalents. This is essential for placing
+ * arbitrary strings into HTML texts.
+ *
+ * @author Douglas Crockford
+ * @see    http://javascript.crockford.com/remedial.html
+ */
+if (!String.prototype.entityify) {
+    String.prototype.entityify = function () {
+        return this.replace(/&/g, "&amp;").replace(/</g,
+            "&lt;").replace(/>/g, "&gt;");
+    };
+}
